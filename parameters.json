@@ -1,0 +1,65 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "vmssName": {
+            "value": "hcukftptest"
+        },
+        "vmSku": {
+            "value": "Standard_B1ms"
+        },
+        "adminUsername": {
+            "value": "adminruss"
+        },
+        "instanceCount": {
+            "value": "2"
+        },
+        "image": {
+            "value": {
+                "sku": "2016-Datacenter",
+                "publisher": "MicrosoftWindowsServer",
+                "version": "latest",
+                "offer": "WindowsServer"
+            }
+        },
+        "singlePlacementGroup": {
+            "value": "true"
+        },
+        "autoscaleDefault": {
+            "value": "1"
+        },
+        "autoscaleMax": {
+            "value": "4"
+        },
+        "autoscaleMin": {
+            "value": "1"
+        },
+        "scaleInCPUPercentageThreshold": {
+            "value": "30"
+        },
+        "scaleInInterval": {
+            "value": "1"
+        },
+        "scaleOutCPUPercentageThreshold": {
+            "value": "80"
+        },
+        "scaleOutInterval": {
+            "value": "1"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "ipAllocationMethod": {
+            "value": "Static"
+        },
+        "pipName": {
+            "value": "hcuktestftp"
+        },
+        "pipLabel": {
+            "value": "russftp"
+        }
+    }
+}
